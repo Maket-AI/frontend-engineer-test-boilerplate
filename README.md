@@ -1,59 +1,47 @@
-# React Tanning 🌴
+# Maket Frontend - Take Home Assignment
 
-![Screenshot 2024-05-07 at 16 41 24](https://github.com/padunk/react-tanning/assets/25411350/d3011209-16de-4fd7-9828-ba47362c8629)
+This is a boilerplate repository for take-home assignments for the Frontend Engineer role.
 
-Create your own project based on this template by running:
-
-if you have install [TheCreate](https://www.npmjs.com/package/@rustyrush/the-create)
-
-```sh
-thecreate --fw rts <YOUR PROJECT NAME>
-```
+## Getting Started
 
 ```bash
-npx degit padunk/react-tanning <YOUR PROJECT NAME>
-cd <YOUR PROJECT NAME>
+git clone <repository-url>
+cd react-tanstack-boilerplate
 npm install
+npm run dev
 ```
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Assignment Task
 
-Currently, two official plugins are available:
+Your task is to complete the **root page** (`/`) of this application with the following requirements:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### 1. Root Page Implementation
+![Root page image](docs/root-page-image.png)
 
-## [TanStack](https://tanstack.com)
+- Implement the landing page at the root route (`/`) with this [Figma Design](https://www.figma.com/design/qLZRhBinAGwGGTkPFXO0dG/Maket-Take-Home?node-id=1-236&m=dev). The code for this route should be added to the `index.lazy.tsx` file. 
+- The main aspect of implementing this design is the grid behind the screen and the elements being placed in specific positions, while being reasonably responsive when resizing the window horizontally. However, you do not need to make it mobile friendly.
+- Feel free to use any combination of TailwindCSS, CSS, and JavaScript for implementing the screen.
+- Most of the fonts and colours you will need are already set up in the `index.css` file using TailwindCSS. But feel free to add more colours or use them inline.
+- Any assets that are needed, can be downloaded from the provided Figma document.
+- The "Go home" button in this screen will navigate to the `/cards` page using TanStack router. The `/cards` page is already implemented and ready to use.
 
-This template is based on Vite React basic template and add these TanStacks:
+### 2. Page Transition Animations
+Implement smooth page transition animations for when navigating from the `/` page you developed above to the `/cards` page.
 
-- Router
-- Query
-- Form
-- Table
+#### Animation Requirements:
+- The page transition animation must involve **at least 4 distinct elements** from the screen
+- Elements should animate in a coordinated, visually appealing manner
+- Consider animating elements like headers, buttons, cards, backgrounds, etc.
+- Use any animation library of your choice (Framer Motion, React Spring, CSS animations, etc.)
 
-Code in `form.lazy.tsx` and `table.lazy.tsx` is from TanStack's Stackblitz example.
+### 3. Technical Requirements
+- Use TanStack Router for navigation
+- Ensure animations are smooth and performant
+- Code should be clean, well-organized, and production-ready
+- Follow good coding practices
 
-Easily remove any TanStack that is not your stack.
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Evaluation Criteria
+- Implementation of the root page with proper navigation and the proper Figma design
+- Quality and smoothness of page transition animations
+- Creative use of at least 4 animated elements
+- Code organization, code architecture, and best practices
