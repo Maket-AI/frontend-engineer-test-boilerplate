@@ -1,4 +1,4 @@
-# Maket - Frontend Take Home Assignment
+# Maket - Fullstack Take Home Assignment
 
 This is a boilerplate repository for take-home assignments for the Frontend Engineer role.
 
