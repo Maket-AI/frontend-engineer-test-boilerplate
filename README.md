@@ -19,7 +19,7 @@ Your task is to complete the **root page** (`/`) of this application with the fo
 ![Root page image](docs/root-page-image.png)
 
 - Implement the landing page at the root route (`/`) with this [Figma Design](https://www.figma.com/design/qLZRhBinAGwGGTkPFXO0dG/Maket-Take-Home?node-id=1-236&m=dev). The code for this route should be added to the `index.lazy.tsx` file. 
-- The main aspect of implementing this design is the grid behind the screen and the elements being placed in specific positions, while being reasonably responsive when resizing the window horizontally. However, you do not need to make it mobile friendly.
+- The main aspect of implementing this design is the grid behind the screen and the elements being placed in specific positions, while being reasonably responsive when resizing the window horizontally and vertically. However, you do not need to make it mobile friendly.
 - Feel free to use any combination of TailwindCSS, CSS, and JavaScript for implementing the screen.
 - Most of the fonts and colours you will need are already set up in the `index.css` file using TailwindCSS, but feel free to add more colours or use them inline.
 - Any required assets can be downloaded from the provided Figma document.
