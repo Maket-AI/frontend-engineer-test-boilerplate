@@ -1,4 +1,4 @@
-# Maket Frontend - Take Home Assignment
+# Maket - Frontend Take Home Assignment
 
 This is a boilerplate repository for take-home assignments for the Frontend Engineer role.
 
